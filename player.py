@@ -1,10 +1,17 @@
 class Player:
     def __init__(self,name):
-        self.name=name# rename/ showName/ 
+        self._name=name# rename/ showName/ 
         self._score=0 # + - show
         self._currentStreak= 0 # + / set to 0
         self._highestStreak=0 # setHighest streak
         self._previousTurnWin=False
+
+    #NAME 
+    def setName(self,name):
+        self.name=name
+    def getName(self):
+        return(self.name)
+    
     #SCORE
     def setWin(self):
         self._score+=1
@@ -20,9 +27,6 @@ class Player:
         self._currentStreak=0
     def getCurrentStreak(self):
         return(self._currentStreak)
-
-    def rename(self,name):
-        self.name=name
 
     
 
