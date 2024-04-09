@@ -1,7 +1,9 @@
 from player import Player
 
 p1= Player("Tintin")
-print(p1.name)
+print(p1.getName())
+p1.setName("Tin")
+print(p1.getName())
 
 print(p1.getScore()) ## 0
 

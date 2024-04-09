@@ -8,9 +8,9 @@ class Player:
 
     #NAME 
     def setName(self,name):
-        self.name=name
+        self._name=name
     def getName(self):
-        return(self.name)
+        return(self._name)
     
     #SCORE
     def setWin(self):
