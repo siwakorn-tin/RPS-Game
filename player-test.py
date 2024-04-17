@@ -7,13 +7,13 @@ print(p1.getName())
 
 print(p1.getScore()) ## 0
 
-p1.setWin()
+p1.setScore(10)
 print(p1.getScore()) ## 1
 
-p1.setWin()
-p1.setWin()
+p1.setScore(10)
+p1.setScore(10)
 print(p1.getScore()) ## 3
 
-p1.setLose()
-p1.setLose()
+p1.setScore(-10)
+p1.setScore(-10)
 print(p1.getScore()) ## 1
